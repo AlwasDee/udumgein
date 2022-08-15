@@ -54,7 +54,7 @@ public class SecurityConfig {
 
         http.authorizeRequests()
                 .antMatchers("/login/**").permitAll()
-                .anyRequest().authenticated()
+//                .anyRequest().authenticated()
                 .and()
                 .formLogin().permitAll()
                 .and()

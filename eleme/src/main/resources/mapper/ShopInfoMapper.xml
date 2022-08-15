@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.ele.eleme.mapper.ShopInfoMapper">
+
+    <resultMap id="BaseResultMap" type="me.ele.eleme.domain.ShopInfo">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="shopId" column="shop_id" jdbcType="INTEGER"/>
+            <result property="tag" column="tag" jdbcType="VARCHAR"/>
+            <result property="shopname" column="shopname" jdbcType="VARCHAR"/>
+            <result property="contactMan" column="contact_man" jdbcType="VARCHAR"/>
+            <result property="contactMobile" column="contact_mobile" jdbcType="VARCHAR"/>
+            <result property="cateid" column="cateid" jdbcType="INTEGER"/>
+            <result property="beginTime" column="begin_time" jdbcType="INTEGER"/>
+            <result property="endTime" column="end_time" jdbcType="INTEGER"/>
+            <result property="storeImg" column="store_img" jdbcType="VARCHAR"/>
+            <result property="instoreImg" column="instore_img" jdbcType="VARCHAR"/>
+            <result property="logoImg" column="logo_img" jdbcType="VARCHAR"/>
+            <result property="longitude" column="longitude" jdbcType="VARCHAR"/>
+            <result property="latitude" column="latitude" jdbcType="VARCHAR"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="district" column="district" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="street" column="street" jdbcType="VARCHAR"/>
+            <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="images" column="images" jdbcType="VARCHAR"/>
+            <result property="notice" column="notice" jdbcType="VARCHAR"/>
+            <result property="score" column="score" jdbcType="FLOAT"/>
+            <result property="sendTime" column="send_time" jdbcType="VARCHAR"/>
+            <result property="boxCost" column="box_cost" jdbcType="DECIMAL"/>
+            <result property="sendCost" column="send_cost" jdbcType="DECIMAL"/>
+            <result property="floorSendCost" column="floor_send_cost" jdbcType="DECIMAL"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,shop_id,tag,
+        shopname,contact_man,contact_mobile,
+        cateid,begin_time,end_time,
+        store_img,instore_img,logo_img,
+        longitude,latitude,province,
+        city,district,address,
+        street,mobile,email,
+        images,notice,score,
+        send_time,box_cost,send_cost,
+        floor_send_cost
+    </sql>
+</mapper>
